@@ -32,7 +32,7 @@ namespace DentalTrainer_FeliksKrazhau
             {
                 inputMouseController.OnStartLeftMouseButtonEvent.RemoveListener(OnStartLeftOrRightMouseButton);
                 inputMouseController.OnStartRightMouseButtonEvent.RemoveListener(OnStartLeftOrRightMouseButton);
-                inputMouseController.OnStartMiddleMouseButtonEvent.AddListener(OnStartMiddleMouseButton);
+                inputMouseController.OnStartMiddleMouseButtonEvent.RemoveListener(OnStartMiddleMouseButton);
                 inputMouseController.OnFinishLeftMouseButtonEvent.RemoveListener(OnFinishMouseButton);
                 inputMouseController.OnFinishRightMouseButtonEvent.RemoveListener(OnFinishMouseButton);
                 inputMouseController.OnFinishMiddleMouseButtonEvent.RemoveListener(OnFinishMouseButton);
